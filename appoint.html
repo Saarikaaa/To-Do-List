@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointments</title>
+    <link rel="stylesheet" href="appoint.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <ul>
+                <li><a href="todo.html"><span class="icon">+</span> Add Task</a></li>
+                <li><a href="inbox.html"><span class="icon">📥</span> Inbox</a></li>
+                <li class="highlighted"><a href="appoint.html"><span class="icon">📅</span> Appointments</a></li>
+            </ul>
+        </div>
+        <div class="main">
+            <h1>Appointments</h1>
+            <input type="text" id="appointmentInput" placeholder="Add a new appointment...">
+            <input type="date" id="appointmentDate">
+            <input type="time" id="appointmentTime">
+            <button id="addAppointmentButton">Add Appointment</button>
+            <h2>Upcoming Appointments</h2>
+            <ul id="appointmentList"></ul>
+        </div>
+    </div>
+    <script src="appoint.js"></script>
+</body>
+</html>

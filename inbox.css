@@ -1,0 +1,122 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0b9d5;
+    margin: 0;
+    display: flex;
+    height: 100vh;
+}
+
+/* Container for the sidebar and main content */
+.container {
+    display: flex;
+    width: 100%;
+}
+
+/* Sidebar styling */
+.sidebar {
+    width: 200px;
+    background-color: #e7dee7;
+    color: rgb(246, 135, 226);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Remove default list styles and padding */
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Sidebar list item styling */
+.sidebar ul li {
+    padding: 10px 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+/* Icon styling for sidebar list items */
+.sidebar ul li .icon {
+    margin-right: 10px;
+}
+
+/* Highlighting effect for sidebar items on hover and for the highlighted item */
+.sidebar ul li:hover,
+.sidebar ul li.highlighted {
+    background-color: #efeaef;
+}
+
+/* Main content styling */
+.main {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Heading styling */
+h1 {
+    margin-bottom: 20px;
+}
+
+/* Message container styling */
+.message-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Individual message styling */
+.message {
+    background-color: #f8f9fa;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Sender name styling */
+.message .sender {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Message content styling */
+.message .message-content {
+    font-size: 14px;
+}
+
+/* Message options styling */
+.message-options {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+/* Button styling for message options */
+.delete-button,
+.reply-button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.delete-button {
+    background-color: #a7289a;
+    color: white;
+}
+
+.delete-button:hover {
+    background-color: #c82333;
+}
+
+.reply-button {
+    background-color: #007bff;
+    color: white;
+}
+
+.reply-button:hover {
+    background-color: #0056b3;
+}

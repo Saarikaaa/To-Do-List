@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="todo.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <ul>
+                <li><a href="todo.html"><span class="icon">+</span> Add Task</a></li>
+                <li><a href="inbox.html"><span class="icon">📥</span> Inbox</a></li>
+                <li><a href="appoint.html"><span class="icon">📅</span> Appointments</a></li>
+            </ul>
+        </div>
+        <div class="main">
+            <h1>To-Do List</h1>
+            <input type="text" id="taskInput" placeholder="Add a new task...">
+            <input type="date" id="taskDueDate">
+            <input type="time" id="taskReminder">
+            <button id="addTaskButton">Add Task</button>
+            <ul id="taskList"></ul>
+        </div>
+    </div>
+    <script src="todo.js"></script>
+</body>
+</html>
